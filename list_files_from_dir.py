@@ -3,8 +3,8 @@ import os
 import pandas as pd
 
 # user dialog for selection of directory
-feature_dir = '/home/marcogustav/Documents/projects/geneva/data/geneva_features_xiyuewang/'
-output_dir = '/home/marcogustav/Documents/projects/geneva/tables/'
+feature_dir = '/.../'
+output_dir = '/.../'
 
 # %%
 file_list = []
@@ -25,7 +25,7 @@ slide_table['PATIENT'] = file_list
 slide_table['FILENAME'] = file_list
 
 # %%
-clini_table.to_excel(output_dir+'GENEVA-CRC-DX_CLINI_blind.xlsx', index=False)
-slide_table.to_csv(output_dir+'GENEVA-CRC-DX_SLIDE_blind.csv', index=False)
+clini_table.to_excel(output_dir+'clini.xlsx', index=False)
+slide_table.to_csv(output_dir+'slide.csv', index=False)
 
 # %%
